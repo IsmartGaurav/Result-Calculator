@@ -1,51 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Result Calculator</title>
+    <title>Document</title>
 </head>
+
 <body>
-    <div class="background">
-        <div class="container">
-            <div id="title">
-               <center> <h1>Result Calculator</h1> </center><br>
-            </div>
+
+
+    <div class="title">
+       <center> <h1> Result Calculator </h1></center>
+    </div>
+    <div class="Form">
+        <center>
+        <div class="app-group">
+            <input type="text" class="myInput" placeholder="1 Full Marks" id="1st">
+            <input type="text" class="myInput" placeholder="1 Obtain Marks" id="1st-2">
         </div>
-        <div id="form">
-            <center>
-        <div id="marksform">
-            <input type="text" id="1st" placeholder="1 Full Marks">
-            <input type="text" id="2nd" placeholder="1 Obatained Marks">
+        <div class="app-group">
+            <input type="text" class="myInput" placeholder="2 Full Marks" id="2nd">
+            <input type="text" class="myInput" placeholder="2 Obtain Marks" id="2nd-2">
         </div>
-        <div id="marksform">
-            <input type="text" id="2nd" placeholder="2 Full Marks">
-            <input type="text" id="2nd-2" placeholder="2 Obatained Marks">
+        <div class="app-group">
+            <input type="text" class="myInput" placeholder="3 Full Marks" id="3rd">
+            <input type="text" class="myInput" placeholder="3 Obtain Marks" id="3rd-2">
         </div>
-        <div id="marksform">
-            <input type="text" id="3rd" placeholder="3 Full Marks">
-            <input type="text" id="3rd-2" placeholder="3 Obatained Marks">
+        <div class="app-group">
+            <input type="text" class="myInput" placeholder="4 Full Marks" id="4th">
+            <input type="text" class="myInput" placeholder="4 Obtain Marks" id="4th-2">
         </div>
-        <div id="marksform">
-            <input type="text" id="4th" placeholder="4 Full Marks">
-            <input type="text" id="4th-2" placeholder="4 Obatained Marks">
+        <div class="app-group">
+            <input type="text" class="myInput" placeholder="5 Full Marks" id="5th">
+            <input type="text" class="myInput" placeholder="5 Obtain Marks" id="5th-2">
         </div>
-        <div id="marksform">
-            <input type="text" id="5th" placeholder="5 Full Marks">
-            <input type="text" id="5th-2" placeholder="5 Obatained Marks">
-        </div>
-        <div id="marksform">
-            <input type="text" id="6th" placeholder="6 Full Marks">
-            <input type="text" id="6th-2" placeholder="6 Obatained Marks">
-        </div>
+        <div class="app-group">
+            <input type="text" class="myInput" placeholder="6 Full Marks" id="6th">
+            <input type="text" class="myInput"  placeholder="6 Obtain Marks" id="6th-2">
         </div>
         <div>
-            <center><br><button onclick="getResult()" > Show Result </button></center>
-           <!-- <center> <br> <input type="button" value="Show Result" onclick="getResult()"> </center> -->
+            <br><input type="button" value="Show" onclick="getResult()" />
+            <button onclick="clearResult()">Clear</button>
+            
         </div>
     </center>
-    </div>
-    <script src="app.js"></script>
+        </div>
+
+        <div class="app-group-showdata">
+            <center>
+            <p id="showcase-1"></p>
+            <p id="showcase-2"></p>
+        </center>
+        </div>
+        
+        <script src="app.js"></script>
 </body>
+
 </html>
