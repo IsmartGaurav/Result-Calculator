@@ -21,21 +21,19 @@ const getResult = () => {
 
     let grade = "";
 
-    let totalmarks = parseInt(first_fullmarks) + parseInt(second_fullmarks) + parseInt(third_fullmarks) + parseInt(four_fullmarks) + parseInt(fifth_fullmarks) + parseInt(sixth_fullmarks);
+    let total = parseInt(first_fullmarks) + parseInt(second_fullmarks) + parseInt(third_fullmarks) + parseInt(four_fullmarks) + parseInt(fifth_fullmarks) + parseInt(sixth_fullmarks);
 
-    let obtainedmarks = parseFloat(first_obmarks) + parseFloat(second_obmarks) + parseFloat(third_obmarks) + parseFloat(four_obmarks) + parseFloat(fifth_obmarks) + parseFloat(sixth_obmarks);
+    let obtain = parseFloat(first_obmarks) + parseFloat(second_obmarks) + parseFloat(third_obmarks) + parseFloat(four_obmarks) + parseFloat(fifth_obmarks) + parseFloat(sixth_obmarks);
 
-    let Percenatge = (obtainedmarks/totalmarks) * 100;
+    let percentage = (obtain / total) * 100;
 
     // If Else Loop For Percentage
 
-    
-
-    if ((Percenatge >= 80) && (Percenatge <= 100)) {
+    if ((percentage >= 80) && (percentage <= 100)) {
         grade = 'A';
-    } else if ((Percenatge >= 60) && (Percenatge <= 80)) {
+    } else if ((percentage >= 60) && (percentage <= 80)) {
         grade = 'B';
-    } else if ((Percenatge >= 40) && (Percenatge <= 60)) {
+    } else if ((percentage >= 40) && (percentage <= 60)) {
         grade = 'C';
     } else {
         grade = 'F';
@@ -43,19 +41,31 @@ const getResult = () => {
 
     // If Else Loop To Show Pass Or Fail
 
-    if ((Percenatge >= 40)&&(Percenatge<=100)) {
-        document.getElementById("showcase-1").innerHTML = "<h2> Good News Your Are Pass 🥳</h2>"
-    } else if((Percenatge<=40)&&(Percenatge>=0))
-        document.getElementById("showcase-1").innerHTML = "<h2>Bad Bews You Are Fail 😰</h2>"
-    else {
+    if ((percentage >= 40) && (percentage <= 100)) {
+        document.getElementById("showcase-1").innerHTML = "<h2>Good News You Are Pass 🥳</h2>"
+        document.getElementById("showcase-2").innerHTML = `Out Of <strong style="color:green">${total}</strong> You Obtain <strong style="color:green;"> ${obtain}</strong> Getting Percentage <strong style="color:green">${percentage.toFixed(2)}% </strong>. Your Grade is <strong style="color:green;"> ${grade}</strong>`
+    } else if ((percentage < 40) && (percentage >= 0)) {
+        document.getElementById("showcase-1").innerHTML = "<h2>Bad News You Are Fail 😰</h2>"
+        document.getElementById('showcase-2').innerHTML = "";
+    } else {
         document.getElementById('showcase-2').innerHTML = "<h2>Something Went Wrong 💀</h2>"
     }
 
 }
 
-
-
 function clearResult() {
-    result.value = "";
-  }
-
+    document.getElementById("1st").value = "";
+    document.getElementById("2nd").value = "";
+    document.getElementById("3rd").value = "";
+    document.getElementById("4th").value = "";
+    document.getElementById("5th").value = "";
+    document.getElementById("6th").value = "";
+    document.getElementById("1st-2").value = "";
+    document.getElementById("2nd-2").value = "";
+    document.getElementById("3rd-2").value = "";
+    document.getElementById("4th-2").value = "";
+    document.getElementById("5th-2").value = "";
+    document.getElementById("6th-2").value = "";
+    document.getElementById("showcase-1").innerHTML = "";
+    document.getElementById('showcase-2').innerHTML = "";
+}
