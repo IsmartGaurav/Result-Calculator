@@ -29,7 +29,7 @@ const getResult = () => {
        // If Loop To Check Student Pass Or Not
 
     if ((percentage < 40) || (parseFloat(first_obmarks) < 40) || (parseFloat(second_obmarks) < 40) || (parseFloat(third_obmarks) < 40) || (parseFloat(four_obmarks) < 40) || (parseFloat(fifth_obmarks) < 40) || (parseFloat(sixth_obmarks) < 40)) {
-        pass = false; // if any condition fails, set pass flag to false
+        pass = false;
     }
 
 
