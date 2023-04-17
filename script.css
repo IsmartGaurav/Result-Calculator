@@ -1,0 +1,77 @@
+body {
+  height: 100vh;
+  width: 100vh;
+}
+
+.input {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: 300ms ease-in-out;
+  text-align: center;
+}
+
+
+.input:focus {
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #969696,
+    -13px -13px 100px #ffffff;
+}
+
+.divv {
+  padding: 1px;
+}
+
+.box {
+  width: 500px;
+  height: 625px;
+  background-color: #ffffff;
+  border-radius: 22px;
+  background: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.5s ease;
+}
+
+.box:hover {
+  -webkit-box-shadow: 39px 41px 78px 14px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 39px 41px 78px 14px rgba(0, 0, 0, 0.32);
+  box-shadow: 39px 41px 78px 14px rgba(0, 0, 0, 0.32);
+}
+
+.title {
+  font-family: 'Dongle', sans-serif;
+  font-size: 35px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #00fafa 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.showdata {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+button {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all .3s;
+  box-shadow: 6px 6px 12px #c5c5c5,
+    -6px -6px 12px #ffffff;
+}
+
+button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5,
+    inset -4px -4px 12px #ffffff;
+}
