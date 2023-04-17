@@ -2,60 +2,67 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-
-    <div class="title">
-       <center> <h1> Result Calculator </h1></center>
-    </div>
-    <div class="Form">
-        <center>
-        <div class="app-group">
-            <input type="text" class="myInput" placeholder="1 Full Marks" id="1st">
-            <input type="text" class="myInput" placeholder="1 Obtain Marks" id="1st-2">
-        </div>
-        <div class="app-group">
-            <input type="text" class="myInput" placeholder="2 Full Marks" id="2nd">
-            <input type="text" class="myInput" placeholder="2 Obtain Marks" id="2nd-2">
-        </div>
-        <div class="app-group">
-            <input type="text" class="myInput" placeholder="3 Full Marks" id="3rd">
-            <input type="text" class="myInput" placeholder="3 Obtain Marks" id="3rd-2">
-        </div>
-        <div class="app-group">
-            <input type="text" class="myInput" placeholder="4 Full Marks" id="4th">
-            <input type="text" class="myInput" placeholder="4 Obtain Marks" id="4th-2">
-        </div>
-        <div class="app-group">
-            <input type="text" class="myInput" placeholder="5 Full Marks" id="5th">
-            <input type="text" class="myInput" placeholder="5 Obtain Marks" id="5th-2">
-        </div>
-        <div class="app-group">
-            <input type="text" class="myInput" placeholder="6 Full Marks" id="6th">
-            <input type="text" class="myInput"  placeholder="6 Obtain Marks" id="6th-2">
-        </div>
-        <div>
-            <br><input type="button" value="Show" onclick="getResult()" />
-            <button onclick="clearResult()">Clear</button>
-            
-        </div>
+  <div class="box">
+    <center>
+      <h1 class="title">Result Calculator</h1>
+      <div class="divv">
+        <input type="text" autocomplete="off" name="text" class="input" placeholder="#1 Full Marks" id="1st">&nbsp &nbsp
+        <input type="text" autocomplete="off" name="text" class="input" placeholder="#1 Obtain Marks" id="1st-2">
+      </div>
+      <br>
+      <div class="divv">
+        <input type="text" autocomplete="off" name="text" class="input" placeholder="#2 Full Marks" id="2nd"> &nbsp
+        &nbsp
+        <input type="text" autocomplete="off" name="text" class="input" placeholder="#2 Obtain Marks" id="2nd-2">
+      </div>
+      <br>
+      <div class="divv">
+        <input type="text" autocomplete="off" name="text" class="input" placeholder="#3 Full Marks" id="3rd"> &nbsp
+        &nbsp
+        <input type="text" autocomplete="off" name="text" class="input" placeholder="#3 Obtain Marks" id="3rd-2">
+      </div>
+      <br>
+      <div class="divv">
+        <input type="text" autocomplete="off" name="text" class="input" placeholder="#4 Full Marks" id="4th"> &nbsp
+        &nbsp
+        <input type="text" autocomplete="off" name="text" class="input" placeholder="#4 Obatain Marks" id="4th-2">
+      </div>
+      <br>
+      <div class="divv">
+        <input type="text" autocomplete="off" name="text" class="input" placeholder="#5 Full Marks" id="5th"> &nbsp
+        &nbsp
+        <input type="text" autocomplete="off" name="text" class="input" placeholder="#5 Obatain Marks" id="5th-2">
+      </div>
+      <br>
+      <div class="divv">
+        <input type="text" autocomplete="off" name="text" class="input" placeholder="#6 Full Marks" id="6th"> &nbsp
+        &nbsp
+        <input type="text" autocomplete="off" name="text" class="input" placeholder="#6 Obtain Marks" id="6th-2">
+        <br><br>
+      </div class="btn">
+      <button onclick="getResult()"> Check </button>&nbsp &nbsp &nbsp
+      <button onclick="clearResult()"> Clear </button>
+      <div class="showdata">
+        <p id="showcase-1"></p>
+        <p id="showcase-2"></p>
     </center>
-        </div>
+  </div>
 
-        <div class="app-group-showdata">
-            <center>
-            <p id="showcase-1"></p>
-            <p id="showcase-2"></p>
-        </center>
-        </div>
-        
-        <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
